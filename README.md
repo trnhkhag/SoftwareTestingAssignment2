@@ -6,7 +6,6 @@ This project contains automated test cases using **Selenium WebDriver** and **Py
 - [Requirements](#requirements)
 - [Setup Instructions](#setup-instructions)
 - [Running the Tests](#running-the-tests)
-- [Test Cases](#test-cases)
 - [Notes](#notes)
 
 ---
