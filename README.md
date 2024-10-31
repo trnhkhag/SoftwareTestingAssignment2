@@ -83,7 +83,7 @@ Example:
 ### Sample Test Execution Command
 In the terminal, run the following command to see detailed output and generate a report:
    ```bash
-   pytest test_sauce_demo.py -v --html=report.html
+   pytest test_login.py -v --html=report.html
    ```
 
 ## Test Cases
