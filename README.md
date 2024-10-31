@@ -86,24 +86,6 @@ In the terminal, run the following command to see detailed output and generate a
    pytest test_login.py -v --html=report.html
    ```
 
-## Test Cases
-
-This project includes four test cases for sorting products on the Sauce Demo website:
-
-1. **Test Sort Product by Name in Ascending Order**  
-   - Verifies that products are sorted by name (A-Z).
-
-2. **Test Sort Product by Name in Descending Order**  
-   - Verifies that products are sorted by name (Z-A).
-
-3. **Test Sort Product by Price in Ascending Order**  
-   - Verifies that products are sorted by price from lowest to highest.
-
-4. **Test Sort Product by Price in Descending Order**  
-   - Verifies that products are sorted by price from highest to lowest.
-
-Each test case includes login automation and sorting validation, checking if the expected order matches the actual order displayed on the site.
-
 ---
 
 ## Notes
@@ -112,5 +94,3 @@ Each test case includes login automation and sorting validation, checking if the
 - Additional configuration may be required if running on CI/CD pipelines or virtual environments.
 
 ---
-
-This guide covers setup, test execution, and environment requirements for running the automated test cases. Happy Testing!
