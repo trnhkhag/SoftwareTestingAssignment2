@@ -34,7 +34,16 @@ This project contains automated test cases using **Selenium WebDriver** and **Py
    ```
 
 ### 2. Install Required Python Packages
-Use `pip` to install Selenium and Pytest:
+1. Open a terminal in VS Code: Terminal > New Terminal
+2. Create a virtual environment by running:
+   ```bash
+   python -m venv venv
+   ```
+3. Activate the virtual environment
+   ```bash
+   venv\Scripts\activate
+   ```
+4. Use `pip` to install Selenium and Pytest:
    ```bash
    pip install selenium pytest
    ```
