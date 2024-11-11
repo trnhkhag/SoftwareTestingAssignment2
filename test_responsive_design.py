@@ -1,7 +1,6 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
 import time
 
 @pytest.fixture
@@ -26,7 +25,15 @@ def test_responsive_phone(driver):
     actual_product_list = []
     for p in products:
         actual_product_list.append(p.text)
+    driver.find_element(By.ID, "react-burger-menu-btn").click()
+    time.sleep(5)
+    nav_elements = driver.find_elements(By.CLASS_NAME, "menu-item")
+    expected_nav_items = ["All Items", "About", "Logout", "Reset App State"]
+    actual_nav_items = []
+    for e in nav_elements:
+        actual_nav_items.append(e.text)
     assert expected_product_list == actual_product_list
+    assert expected_nav_items == actual_nav_items
     
 # TC2: Test responsive on tablet
 def test_responsive_tablet(driver):
@@ -37,7 +44,15 @@ def test_responsive_tablet(driver):
     actual_product_list = []
     for p in products:
         actual_product_list.append(p.text)
+    driver.find_element(By.ID, "react-burger-menu-btn").click()
+    time.sleep(5)
+    nav_elements = driver.find_elements(By.CLASS_NAME, "menu-item")
+    expected_nav_items = ["All Items", "About", "Logout", "Reset App State"]
+    actual_nav_items = []
+    for e in nav_elements:
+        actual_nav_items.append(e.text)
     assert expected_product_list == actual_product_list
+    assert expected_nav_items == actual_nav_items
     
 # TC3: Test responsive on desktop
 def test_responsive_desktop(driver):
@@ -48,4 +63,12 @@ def test_responsive_desktop(driver):
     actual_product_list = []
     for p in products:
         actual_product_list.append(p.text)
+    driver.find_element(By.ID, "react-burger-menu-btn").click()
+    time.sleep(5)
+    nav_elements = driver.find_elements(By.CLASS_NAME, "menu-item")
+    expected_nav_items = ["All Items", "About", "Logout", "Reset App State"]
+    actual_nav_items = []
+    for e in nav_elements:
+        actual_nav_items.append(e.text)
     assert expected_product_list == actual_product_list
+    assert expected_nav_items == actual_nav_items
